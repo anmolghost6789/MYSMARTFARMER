@@ -77,7 +77,45 @@
 
 <div class="account-container">
     <div class="account-header">My Account</div>
-
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Back Button Example</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+            .back-button {
+                position: fixed;
+                top: 10px;
+                right: 10px;
+                background-color: yellow;
+                border: none;
+                padding: 10px 20px;
+                cursor: pointer;
+                font-size: 16px;
+                border-radius: 5px;
+                z-index: 1000; /* Ensure the button is on top */
+            }
+            .back-button:hover {
+                background-color: #f0e300; /* Slightly darker yellow on hover */
+            }
+        </style>
+    </head>
+    <body>
+        <button class="back-button" onclick="goBack()">Back</button>
+    
+        <script>
+            function goBack() {
+                window.location.href = 'index.html'; // Redirect to the main page
+            }
+        </script>
+    </body>
+    </html>
     <!-- Profile Section -->
     <div class="account-section" onclick="toggleSection('profile-details', this)">
         <span>Profile</span>
